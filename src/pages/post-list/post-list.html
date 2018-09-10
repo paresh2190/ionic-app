@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>Post list</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-list>
+        <div class="item-wrap" *ngFor="let post of posts">
+            <ion-item (click)='postSelected(post)'>
+                <h2>Post {{post.id}}</h2>
+                <h6>{{post.title}}</h6>
+                <ion-icon name="arrow-forward" item-end></ion-icon>
+            </ion-item>
+        </div>
+    </ion-list>
+</ion-content>

@@ -1,0 +1,13 @@
+<ion-content>
+    <div class="login-page">
+        <div class="form">
+            <h1>Login</h1>
+            <div class="login-form">
+                <input type="text" name="user" [(ngModel)]="username" placeholder="username" />
+                <input type="password" name="pass" [(ngModel)]="password" placeholder="password" />
+                <p class="error" *ngIf="show">Enter Valid Details</p>
+                <button type="button" (click)='submit()'>login</button>
+            </div>
+        </div>
+    </div>
+</ion-content>

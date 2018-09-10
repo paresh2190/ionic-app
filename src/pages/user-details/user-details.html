@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>User Details</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-list>
+        <div class="item-wrap">
+            <ion-item>
+                <p><strong>Name : </strong>{{ details.name }}</p>
+                <p><strong>Email : </strong>{{ details.email }}</p>
+                <p><strong>Phone : </strong>{{ details.phone }}</p>
+                <p><strong>Username : </strong>{{ details.username }}</p>
+                <p><strong>Website : </strong>{{ details.website }}</p>
+            </ion-item>
+        </div>
+    </ion-list>
+</ion-content>
